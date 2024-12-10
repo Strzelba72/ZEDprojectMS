@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Mikołaj Strzelczyk" />
+
+<meta name="date" content="2024-12-10" />
+
+<title>Materials Project</title>
+
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#section-TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#section-TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="section-TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div id="section-header">
+
+
+
+<h1 class="title toc-ignore">Materials Project</h1>
+<h4 class="author">Mikołaj Strzelczyk</h4>
+<h4 class="date">2024-12-10</h4>
+
+</div>
+
+
+<div id="section-opis-zbioru" class="section level2">
+<h2>Opis zbioru</h2>
+<p>Materials Project to inicjatywa Departamentu Energii USA, która
+dostarcza otwarte dane i narzędzia do analizy materiałów. Udostępnia
+szczegółowe informacje o strukturze, właściwościach i zastosowaniach
+tysięcy materiałów, wspierając rozwój takich dziedzin jak elektronika,
+fotonika czy magazynowanie energii. Platforma umożliwia szybkie
+wyszukiwanie nowych materiałów i przewidywanie ich właściwości, a jednym
+z kluczowych zbiorów danych jest baza materiałów do baterii, zawierająca
+informacje o ich składzie i parametrach wydajnościowych.</p>
+</div>
+<div id="section-wnioski" class="section level2">
+<h2>Wnioski</h2>
+<p>Raport wskazuje, że dane z Materials Project pozwalają na budowanie
+dokładnych modeli predykcyjnych dla właściwości baterii. Modelowanie
+właściwości, takich jak Gravimetric.Energy, przy użyciu Random Forest
+daje wartościowe rezultaty i może wspierać rozwój materiałów baterii o
+wyższej wydajności.</p>
+<div id="section-jakość-zbioru-danych" class="section level3">
+<h3>Jakość zbioru danych</h3>
+<p>Zbiór danych jest kompletny – brak brakujących wartości (NA) oraz
+zduplikowanych wierszy. Dzięki temu dane są wystarczająco wysokiej
+jakości do przeprowadzenia analizy i modelowania predykcyjnego.</p>
+</div>
+<div id="section-charakterystyka-zbioru-danych" class="section level3">
+<h3>Charakterystyka zbioru danych</h3>
+<p>Zbiór zawiera dane o 4351 próbkach i 17 cechach dotyczących
+materiałów baterii, takich jak właściwości chemiczne, fizyczne oraz
+parametry wydajnościowe. Najsilniejsza korelacja występuje między
+zmiennymi związanymi z pojemnością i energią (zarówno grawimetryczną,
+jak i wolumetryczną), co wskazuje na ich istotny wpływ na parametry
+baterii.</p>
+</div>
+<div id="section-zrozumienie-atrybutów" class="section level3">
+<h3>Zrozumienie atrybutów</h3>
+<p>Najczęściej występującym głównym jonem jest lit (Li), a wśród wzorów
+chemicznych dominują związki zawierające mangan (np. MnO2 w stanie
+naładowanym).</p>
+</div>
+<div id="section-predykcja-gravimetric.energy" class="section level3">
+<h3>Predykcja Gravimetric.Energy</h3>
+<p>Model Random Forest osiągnął dobre wyniki, z wartościami oceny: RMSE
+na zbiorze testowym: 152.05 R²: 0.82, co wskazuje, że model wyjaśnia 82%
+zmienności danych testowych. MAE: 78.78, co oznacza, że średni błąd
+przewidywania wynosi około 78.78 jednostek. Model zatem wykazuje dużą
+precyzję, a różnica między rzeczywistymi i przewidywanymi wartościami
+jest stosunkowo mała.</p>
+</div>
+<div id="section-rozkład-danych" class="section level3">
+<h3>Rozkład danych</h3>
+<p>Rozkład zmiennej Gravimetric.Energy w zbiorach treningowym i testowym
+jest podobny, co potwierdza, że podział na zbiory został przeprowadzony
+prawidłowo, minimalizując ryzyko przetrenowania modelu.</p>
+</div>
+<div id="section-zastosowanie-modelu" class="section level3">
+<h3>Zastosowanie modelu</h3>
+<p>Model Random Forest jest skutecznym narzędziem do przewidywania
+Gravimetric.Energy na podstawie parametrów takich jak Average.Voltage,
+Max.Delta.Volume i Volumetric.Capacity.</p>
+</div>
+</div>
+<div id="section-lista-bibliotek-użytych-w-raporcie"
+class="section level2">
+<h2>Lista bibliotek użytych w raporcie</h2>
+<pre class="r"><code>library(dplyr)
+library(ggplot2)
+library(shiny)
+library(corrplot)
+library(caret)</code></pre>
+</div>
+<div id="section-opis-atrybutów" class="section level2">
+<h2>Opis atrybutów</h2>
+<ul>
+<li><strong>Battery ID:</strong> Identyfikator baterii.</li>
+<li><strong>Battery Formula:</strong> Wzór chemiczny materiału
+baterii.</li>
+<li><strong>Working Ion:</strong> Główny jon, który odpowiada za
+transport ładunku w baterii.</li>
+<li><strong>Formula Charge:</strong> Wzór chemiczny materiału baterii w
+stanie naładowanym.</li>
+<li><strong>Formula Discharge:</strong> Wzór chemiczny materiału baterii
+w stanie rozładowanym.</li>
+<li><strong>Max Delta Volume:</strong> Zmiana objętości w % dla danego
+kroku napięcia za pomocą wzoru: max(charge, discharge)/min(charge,
+discharge) -1.</li>
+<li><strong>Average Voltage:</strong> Średnie napięcie dla
+poszczególnego kroku napięcia.</li>
+<li><strong>Gravimetric Capacity:</strong> Pojemność grawimetryczna,
+czyli ilość energii na jednostkę masy (mAh/g).</li>
+<li><strong>Volumetric Capacity:</strong> Pojemność wolumetryczna, czyli
+ilość energii na jednostkę objętości (mAh/cm³).</li>
+<li><strong>Gravimetric Energy:</strong> Gęstość energii w odniesieniu
+do masy baterii (Wh/kg).</li>
+<li><strong>Volumetric Energy:</strong> Gęstość energii w odniesieniu do
+objętości baterii (Wh/L).</li>
+<li><strong>Atomic Fraction Charge:</strong> Udział atomowy składników w
+stanie naładowanym.</li>
+<li><strong>Atomic Fraction Discharge:</strong> Udział atomowy
+składników w stanie rozładowanym.</li>
+<li><strong>Stability Charge:</strong> Wskaźnik stabilności materiału w
+stanie naładowanym.</li>
+<li><strong>Stability Discharge:</strong> Wskaźnik stabilności materiału
+w stanie rozładowanym.</li>
+</ul>
+</div>
+<div id="section-przykładowe-dane-i-podsumowanie"
+class="section level2">
+<h2>Przykładowe dane i podsumowanie</h2>
+<pre><code>##      Battery.ID Battery.Formula Working.Ion Formula.Charge Formula.Discharge
+## 1      mp-30_Al         Al0-2Cu          Al             Cu             Al2Cu
+## 2 mp-1022721_Al         Al1-3Cu          Al           AlCu             Al3Cu
+## 3    mp-8637_Al         Al0-5Mo          Al             Mo             Al5Mo
+## 4     mp-129_Al        Al0-12Mo          Al             Mo            Al12Mo
+## 5      mp-91_Al         Al0-12W          Al              W             Al12W
+## 6 mp-1055908_Al        Al0-12Mn          Al             Mn            MnAl12</code></pre>
+<pre><code>##   Max.Delta.Volume Average.Voltage Gravimetric.Capacity Volumetric.Capacity
+## 1         3.043399      0.08903312             1368.481            5562.790
+## 2         1.243653     -0.02158634             1112.937            4418.980
+## 3         4.762574      0.12275685             1741.504            7175.702
+## 4        12.723893      0.04312143             2298.811            7346.232
+## 5        12.494598      0.02923421             1900.745            7332.719
+## 6        18.236156      0.03973136             2547.693            7592.916</code></pre>
+<pre><code>##   Gravimetric.Energy Volumetric.Energy Stability.Charge Stability.Discharge
+## 1          121.84009         495.27253       0.00000000          0.00000000
+## 2          -24.02423         -95.38962       0.07406124          0.09624583
+## 3          213.78156         880.86651       0.41146010          0.04521195
+## 4           99.12801         316.78006       0.00000000          0.01144559
+## 5           55.56677         214.36621       0.00000000          0.00000000
+## 6          101.22330         301.67688       0.14546432          0.00000000</code></pre>
+<pre><code>##   Atomic.Fraction.Charge Atomic.Fraction.Discharge Steps Max.Voltage.Step
+## 1                    0.0                 0.6666667     1                0
+## 2                    0.5                 0.7500000     1                0
+## 3                    0.0                 0.8333333     1                0
+## 4                    0.0                 0.9230769     1                0
+## 5                    0.0                 0.9230769     1                0
+## 6                    0.0                 0.9230769     1                0</code></pre>
+<table>
+<colgroup>
+<col width="3%" />
+<col width="19%" />
+<col width="19%" />
+<col width="19%" />
+<col width="19%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">Battery.ID</th>
+<th align="left">Battery.Formula</th>
+<th align="left">Working.Ion</th>
+<th align="left">Formula.Charge</th>
+<th align="left">Formula.Discharge</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Length:4351</td>
+<td align="left">Length:4351</td>
+<td align="left">Length:4351</td>
+<td align="left">Length:4351</td>
+<td align="left">Length:4351</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Class :character</td>
+<td align="left">Class :character</td>
+<td align="left">Class :character</td>
+<td align="left">Class :character</td>
+<td align="left">Class :character</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Mode :character</td>
+<td align="left">Mode :character</td>
+<td align="left">Mode :character</td>
+<td align="left">Mode :character</td>
+<td align="left">Mode :character</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col width="3%" />
+<col width="23%" />
+<col width="20%" />
+<col width="26%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">Max.Delta.Volume</th>
+<th align="left">Average.Voltage</th>
+<th align="left">Gravimetric.Capacity</th>
+<th align="left">Volumetric.Capacity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Min. : 0.00002</td>
+<td align="left">Min. :-7.755</td>
+<td align="left">Min. : 5.176</td>
+<td align="left">Min. : 24.08</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">1st Qu.: 0.01747</td>
+<td align="left">1st Qu.: 2.226</td>
+<td align="left">1st Qu.: 88.108</td>
+<td align="left">1st Qu.: 311.62</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Median : 0.04203</td>
+<td align="left">Median : 3.301</td>
+<td align="left">Median : 130.691</td>
+<td align="left">Median : 507.03</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Mean : 0.37531</td>
+<td align="left">Mean : 3.083</td>
+<td align="left">Mean : 158.291</td>
+<td align="left">Mean : 610.62</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">3rd Qu.: 0.08595</td>
+<td align="left">3rd Qu.: 4.019</td>
+<td align="left">3rd Qu.: 187.600</td>
+<td align="left">3rd Qu.: 722.75</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Max. :293.19322</td>
+<td align="left">Max. :54.569</td>
+<td align="left">Max. :2557.627</td>
+<td align="left">Max. :7619.19</td>
+</tr>
+</tbody>
+</table>
+<table style="width:100%;">
+<colgroup>
+<col width="3%" />
+<col width="24%" />
+<col width="23%" />
+<col width="22%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">Gravimetric.Energy</th>
+<th align="left">Volumetric.Energy</th>
+<th align="left">Stability.Charge</th>
+<th align="left">Stability.Discharge</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Min. :-583.5</td>
+<td align="left">Min. :-2208.1</td>
+<td align="left">Min. :0.00000</td>
+<td align="left">Min. :0.00000</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">1st Qu.: 211.7</td>
+<td align="left">1st Qu.: 821.6</td>
+<td align="left">1st Qu.:0.03301</td>
+<td align="left">1st Qu.:0.01952</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Median : 401.8</td>
+<td align="left">Median : 1463.8</td>
+<td align="left">Median :0.07319</td>
+<td align="left">Median :0.04878</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Mean : 444.1</td>
+<td align="left">Mean : 1664.0</td>
+<td align="left">Mean :0.14257</td>
+<td align="left">Mean :0.12207</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">3rd Qu.: 614.4</td>
+<td align="left">3rd Qu.: 2252.3</td>
+<td align="left">3rd Qu.:0.13160</td>
+<td align="left">3rd Qu.:0.09299</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Max. :5926.9</td>
+<td align="left">Max. :18305.9</td>
+<td align="left">Max. :6.48710</td>
+<td align="left">Max. :6.27781</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col width="3%" />
+<col width="27%" />
+<col width="31%" />
+<col width="16%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">Atomic.Fraction.Charge</th>
+<th align="left">Atomic.Fraction.Discharge</th>
+<th align="left">Steps</th>
+<th align="left">Max.Voltage.Step</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Min. :0.00000</td>
+<td align="left">Min. :0.007407</td>
+<td align="left">Min. :1.000</td>
+<td align="left">Min. : 0.0000</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">1st Qu.:0.00000</td>
+<td align="left">1st Qu.:0.086957</td>
+<td align="left">1st Qu.:1.000</td>
+<td align="left">1st Qu.: 0.0000</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Median :0.00000</td>
+<td align="left">Median :0.142857</td>
+<td align="left">Median :1.000</td>
+<td align="left">Median : 0.0000</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Mean :0.03986</td>
+<td align="left">Mean :0.159077</td>
+<td align="left">Mean :1.167</td>
+<td align="left">Mean : 0.1503</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">3rd Qu.:0.04762</td>
+<td align="left">3rd Qu.:0.200000</td>
+<td align="left">3rd Qu.:1.000</td>
+<td align="left">3rd Qu.: 0.0000</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Max. :0.90909</td>
+<td align="left">Max. :0.993333</td>
+<td align="left">Max. :6.000</td>
+<td align="left">Max. :26.9607</td>
+</tr>
+</tbody>
+</table>
+<div id="section-sprawdzenie-jakości-danych" class="section level3">
+<h3>Sprawdzenie jakości danych</h3>
+<p>Suma wartości NA</p>
+<pre class="r"><code>sum(is.na(df))</code></pre>
+<pre><code>## [1] 0</code></pre>
+<p>Suma wartości zduplikowanych</p>
+<pre class="r"><code>sum(duplicated(df))</code></pre>
+<pre><code>## [1] 0</code></pre>
+<p>Na tej podstawie można stwierdzić, że jakość zbioru jest
+wystarczająca do przeprowadzenia analizy.</p>
+</div>
+</div>
+<div id="section-wielkość-zbioru-danych" class="section level2">
+<h2>Wielkość zbioru danych</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+Metryka
+</th>
+<th style="text-align:right;">
+Wartość
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Liczba wierszy
+</td>
+<td style="text-align:right;">
+4351
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Liczba kolumn
+</td>
+<td style="text-align:right;">
+17
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="section-analiza-wartości-atrybutów" class="section level2">
+<h2>Analiza wartości atrybutów</h2>
+<p>W tej części zostanie przedstawiona analiza wartości atrybutów
+kategorycznych na wykresach statycznych i artybutów numerycznych ma
+wykresie dynamicznym. Dodatkowo na wykresie jest możliwość sprawdzenia
+korelacji atrybutów.</p>
+<div
+id="section-wykres-przedstawiający-najczęstsze-występowanie-wzóru-chemicznego-materiału-baterii"
+class="section level3">
+<h3>Wykres przedstawiający najczęstsze występowanie wzóru chemicznego
+materiału baterii</h3>
+<p>Analiza pozwala określić najczęściej występujący wzór chemiczny
+materiału baterii.</p>
+<p><img src="MaterialsProject_files/figure-html/plot-battery-formula-1.png" width="672" /></p>
+<p>Najpopularniejszym wzorem chemicznym jest: Li0-1V2OF5.</p>
+</div>
+<div id="section-wykres-przedstawiający-główny-jon."
+class="section level3">
+<h3>Wykres przedstawiający główny jon.</h3>
+<p>Analiza pozwala określić najczęściej występujący główny jon, który
+odpowiada za transport ładunku w baterii.</p>
+<p><img src="MaterialsProject_files/figure-html/plot_working_ion-1.png" width="672" /></p>
+<p>Głównym jonem jest: Li.</p>
+</div>
+<div
+id="section-wykres-przedstawiający-najczęstsze-10-wzorów-chemicznych-materiału-baterii-w-stanie-naładowanym."
+class="section level3">
+<h3>Wykres przedstawiający najczęstsze 10 wzorów chemicznych materiału
+baterii w stanie naładowanym.</h3>
+<p>Poniższa analiza przedstawia najczęstsze 10 wzorów chemicznych
+materiału baterii w stanie naładowanym.</p>
+<p><img src="MaterialsProject_files/figure-html/plot-battery-charge-1.png" width="672" /></p>
+<p>Najczęstszym wzorem jest: MnO2</p>
+</div>
+<div
+id="section-wykres-przedstawiający-najczęstsze-10-wzorów-chemicznych-materiału-baterii-w-stanie-rozładowanym."
+class="section level3">
+<h3>Wykres przedstawiający najczęstsze 10 wzorów chemicznych materiału
+baterii w stanie rozładowanym.</h3>
+<p>Poniższa analiza przedstawia najczęstsze 10 wzorów chemicznych
+materiału baterii w stanie rozładowanym.</p>
+<p><img src="MaterialsProject_files/figure-html/plot-battery-discharge-1.png" width="672" /></p>
+<p>Najczęstszymi wzorami są: LiCoPO4, LiFePO4 i LiMnPO4.</p>
+</div>
+<div id="section-wykres-dynamiczny" class="section level3">
+<h3>Wykres dynamiczny</h3>
+<p>Wykres dynamiczny pozwalający analizować wartości numeryczne zbioru.
+Dodatkowo pozwala analizować korelacje.</p>
+<style type="text/css">
+.shiny-frame{height: 620px;}
+</style>
+<iframe data-deferred-src="appda715e83c18c413ef6656630b76a7473/?w=&amp;__subapp__=1" width="100%" height="400" class="shiny-frame shiny-frame-deferred"></iframe>
+<p>Można szybko zobaczyć, jakie wartości dominują dla danego atrybutu
+oraz zidentyfikować odstające dane (outliers). Dynamiczna możliwość
+wyboru dwóch atrybutów pozwala ocenić, czy istnieje liniowa lub
+nieliniowa zależność między nimi. Na przykład, mocno dodatnia korelacja
+pomiędzy Gravimetric.Capacity i Gravimetric.Energy sugeruje, że większa
+pojemność grawimetryczna wiąże się z wyższą gęstością energii.</p>
+</div>
+</div>
+<div id="section-macierz-korelacji" class="section level2">
+<h2>Macierz korelacji</h2>
+<p>W tej części zastowoano maciecierz korelacji, aby określić zależności
+liniowe między zmiennymi w zbiorze danych, co pomaga zrozumieć ich
+wzajemne powiązania.</p>
+<p><img src="MaterialsProject_files/figure-html/corrplot-1.png" width="672" /></p>
+<p>Najsilniejsza korelacja występuje pomiędzy pojemnością i energią
+wartości wolumetrycznej i grawimetryczej. Silna korelacja występuje
+również między wskaźnikiem stabilności materiału w stanie rozładowanym i
+naładowanym.</p>
+</div>
+<div id="section-predykcja" class="section level2">
+<h2>Predykcja</h2>
+<p>W tej części przeprowadzimy predykcje na atrybucie Gravimetric.Energy
+na podstawie atrybutów Average.Voltage, Max.Delta.Volume i
+Volumetric.Capacity. Do predykcji użyjemy algorytm Random Forest wraz z
+walidacjią krzyżową 5-krotną i 5-powtarzalną.Zbiór treningowy stanowi
+70% danych, a testowy 30%.</p>
+<div id="section-podział-zbioru-na-treningowy-i-testowy"
+class="section level3">
+<h3>Podział zbioru na treningowy i testowy</h3>
+<p>Wykres pozwala ocenić, czy rozkład zmiennej docelowej
+Gravimetric.Energy w zbiorze treningowym i testowym jest podobny, co
+zapewnia równowagę w modelu predykcyjnym.</p>
+<p><img src="MaterialsProject_files/figure-html/prediction_partition-1.png" width="672" /></p>
+</div>
+<div id="section-trenowanie-modelu" class="section level3">
+<h3>Trenowanie modelu</h3>
+<p>Model przewiduje Gravimetric.Energy na podstawie Average.Voltage,
+Max.Delta.Volume oraz Volumetric.Capacity.</p>
+</div>
+<div id="section-wyświetlenie-podsumowania-modelu"
+class="section level3">
+<h3>Wyświetlenie podsumowania modelu</h3>
+<p>Zawiera m.in. najlepsze parametry oraz miary oceny modelu na zbiorze
+treningowym.</p>
+<pre><code>## Random Forest 
+## 
+## 3047 samples
+##    3 predictor
+## 
+## No pre-processing
+## Resampling: Cross-Validated (5 fold, repeated 5 times) 
+## Summary of sample sizes: 2439, 2436, 2437, 2437, 2439, 2437, ... 
+## Resampling results across tuning parameters:
+## 
+##   mtry  RMSE      Rsquared   MAE     
+##   1     156.7889  0.8022556  86.43710
+##   2     137.6539  0.8465857  77.40187
+##   3     132.1871  0.8580031  76.86319
+## 
+## RMSE was used to select the optimal model using the smallest value.
+## The final value used for the model was mtry = 3.</code></pre>
+</div>
+<div id="section-predykcja-modelu" class="section level3">
+<h3>Predykcja modelu</h3>
+<p>Wyniki predykcji porównano z rzeczywistymi wartościami w zbiorze
+testowym za pomocą miar jakości modelu:</p>
+<ul>
+<li><p>RMSE (Root Mean Square Error): 152.05 – miara błędu wskazująca na
+przeciętną różnicę między prognozowanymi a rzeczywistymi
+wartościami.</p></li>
+<li><p>R² (R-squared): 0.82 – miara określająca, jak dobrze model
+wyjaśnia zmienność w danych testowych. Wartość 0.82 oznacza, że model
+wyjaśnia 82% wariancji zmiennej docelowej.</p></li>
+<li><p>MAE (Mean Absolute Error): 78.78 – średnia bezwzględna różnica
+między prognozowanymi a rzeczywistymi wartościami.</p></li>
+</ul>
+<pre><code>##        RMSE    Rsquared         MAE 
+## 152.0537298   0.8176445  78.7764877</code></pre>
+</div>
+<div id="section-wykres-porównujący-wartości-rzeczywiste-i-przewidziane"
+class="section level3">
+<h3>Wykres porównujący wartości rzeczywiste i przewidziane</h3>
+<p>Punkty pokazują zależność między wartościami rzeczywistymi a
+prognozowanymi. Zielona linia reprezentuje linię idealną (y = x),
+wskazującą doskonałe dopasowanie modelu.</p>
+<p><img src="MaterialsProject_files/figure-html/prediction_plot-1.png" width="672" /></p>
+<p>Większość punktów blisko zielonej linii sugeruje dobrą jakość modelu,
+choć można zauważyć pewne odchylenia dla pojedyńczych danych
+skrajnych.</p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("section-TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#section-TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
